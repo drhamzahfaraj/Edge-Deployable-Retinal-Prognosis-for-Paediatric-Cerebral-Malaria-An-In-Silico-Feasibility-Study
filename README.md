@@ -436,12 +436,6 @@ redistribute them. You must obtain them separately from the URLs in
 
 ## 13. Acknowledgments
 
-The authors thank the **Deanship of Graduate Studies and Scientific
-Research at Taif University** for funding this work (grant number
-[GRANT ID]). The authors also thank the **Malawi–Liverpool–Wellcome
-Trust Clinical Research Programme** for publishing the summary
-statistics of the Blantyre paediatric CM cohort that anchor our
-simulation priors; no patient-level data from MLW were accessed for
-this study. We thank the maintainers of **DRIVE**, **STARE**,
-**Messidor-2** and **IDRiD** for making their retinal datasets
-publicly available.
+The author would like to acknowledge the Deanship of
+Graduate Studies and Scientific Research, Taif Univer-
+sity for funding this work.

@@ -31,9 +31,8 @@ An In-Silico Feasibility Study**
 8. [Repository structure](#8-repository-structure)
 9. [Running the experiments](#9-running-the-experiments)
 10. [Limitations](#10-limitations)
-11. [Citation](#11-citation)
-12. [License](#12-license)
-13. [Acknowledgments](#13-acknowledgments)
+11. [License](#12-license)
+12. [Acknowledgments](#13-acknowledgments)
 
 ---
 
@@ -403,26 +402,10 @@ done
    inverts on real data, the architecture in its present form should
    be withdrawn. Negative results will be published regardless.
 
----
-
-## 11. Citation
-
-```bibtex
-@article{FarajAribiHSASGF2026,
-  author  = {Faraj, Hamzah and Aribi, Yassine},
-  title   = {{H-SAS-GF}: An In-Silico Feasibility Framework for
-             Scalable Cerebral Malaria Retinal Prognosis Using
-             Small-Cohort Priors and Synthetic Augmentation},
-  journal = {Medical & Biological Engineering & Computing (Springer)},
-  year    = {2026},
-  note    = {Simulation-based feasibility study; code at
-             \url{https://github.com/h-sas-gf/h-sas-gf}}
-}
-```
 
 ---
 
-## 12. License
+## 11. License
 
 This repository is released under the **MIT License**. See
 [LICENSE](LICENSE) for the full text.
@@ -434,7 +417,7 @@ redistribute them. You must obtain them separately from the URLs in
 
 ---
 
-## 13. Acknowledgments
+## 12. Acknowledgments
 
 The author would like to acknowledge the Deanship of
 Graduate Studies and Scientific Research, Taif Univer-

@@ -311,15 +311,9 @@ h-sas-gf/
 ├── figures/
 │   └── README.md                     ← figures regenerated from results
 │
-├── tests/
-│   └── test_driver_reproducibility.py
-│
-└── docs/
-    ├── 01_SELF_ASSESSMENT.md         ← Stage 1 critical analysis
-    ├── 02_REVIEWER_REPORTS.md        ← Stage 3 five-reviewer reports
-    ├── 03_RESPONSE_TO_REVIEWERS.md   ← revision response letter
-    ├── 04_REFERENCE_AUDIT.md         ← detailed bibliography audit
-    └── 05_PROCESS_RECORD.md          ← pipeline process summary
+└── tests/
+    └── test_driver_reproducibility.py
+
 ```
 
 ---

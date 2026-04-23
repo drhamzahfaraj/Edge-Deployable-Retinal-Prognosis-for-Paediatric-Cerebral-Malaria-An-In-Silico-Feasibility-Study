@@ -1,0 +1,134 @@
+{
+  "config": {
+    "n_patients": 132,
+    "mortality_rate": 0.136,
+    "mean_age_months": 42.0,
+    "sd_age_months": 23.0,
+    "pct_male": 0.58,
+    "pct_severe_gcs_lt_8": 0.4,
+    "n_sectors": 48,
+    "sras_mean_death": 0.3,
+    "sras_sd_death": 0.18,
+    "sras_mean_surv": 0.2,
+    "sras_sd_surv": 0.17,
+    "informative_macular_frac": 0.5,
+    "informative_periph_frac": 0.2,
+    "sample_noise_sd": 0.08,
+    "feature_dim": 128,
+    "gat_heads": 2,
+    "gat_hidden": 48,
+    "xgb_trees": 30,
+    "xgb_max_depth": 3,
+    "mcd_samples": 10,
+    "mcd_rate": 0.1,
+    "focal_gamma": 2.0,
+    "n_synthetic": 500,
+    "target_fid": 12.5,
+    "train_frac": 0.7,
+    "val_frac": 0.15,
+    "test_frac": 0.15,
+    "pi4_idle_w": 2.7,
+    "pi4_load_w": 6.4,
+    "quantised_flops": 1500000000.0,
+    "pi4_flops_per_s": 2000000000.0,
+    "model_size_kb": 600,
+    "setup_cost_usd": 5050.0,
+    "tests_per_year": 10000,
+    "years": 5,
+    "hospital_day_cost_usd": 120.0,
+    "days_saved_per_test": 3.0,
+    "triage_mortality_reduction": 0.1,
+    "seed": 42
+  },
+  "main": {
+    "auc": 0.958,
+    "auc_95ci": [
+      0.825,
+      1.0
+    ],
+    "operating_point_0.6": {
+      "threshold": 0.6,
+      "sn": 1.0,
+      "sp": 0.444,
+      "precision": 0.286,
+      "f1": 0.444,
+      "tp": 4,
+      "fp": 10,
+      "fn": 0,
+      "tn": 8
+    }
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.5,
+      "sn": 1.0,
+      "sp": 0.278,
+      "precision": 0.235,
+      "f1": 0.381,
+      "tp": 4,
+      "fp": 13,
+      "fn": 0,
+      "tn": 5
+    },
+    {
+      "threshold": 0.6,
+      "sn": 1.0,
+      "sp": 0.444,
+      "precision": 0.286,
+      "f1": 0.444,
+      "tp": 4,
+      "fp": 10,
+      "fn": 0,
+      "tn": 8
+    },
+    {
+      "threshold": 0.7,
+      "sn": 1.0,
+      "sp": 0.722,
+      "precision": 0.444,
+      "f1": 0.615,
+      "tp": 4,
+      "fp": 5,
+      "fn": 0,
+      "tn": 13
+    }
+  ],
+  "ablation": {
+    "full": {
+      "auc": 0.917,
+      "sras_macular_importance": 0.402,
+      "sras_periph_importance": 0.598
+    },
+    "no_ssl": {
+      "auc": 0.833
+    },
+    "no_gat": {
+      "auc": 0.75
+    },
+    "no_xgb": {
+      "auc": 0.681
+    }
+  },
+  "compute_budget": {
+    "inference_s": 4.5,
+    "incremental_power_w": 0.93,
+    "energy_per_test_j": 0.69,
+    "model_size_kb": 600
+  },
+  "cost_model": {
+    "total_tests": 50000,
+    "total_cost_usd": 30050.0,
+    "test_cost_usd": 0.5,
+    "lives_saved": 272,
+    "cost_per_life_saved_usd": 110.48,
+    "hospital_day_savings_usd": 18000000
+  },
+  "subset_analysis": {
+    "n_deaths_in_test": 4,
+    "n_fn_total": 0,
+    "mcd_flagged_fn": 0,
+    "mcd_flag_rate": null,
+    "subset_sensitivity": 1.0
+  },
+  "runtime_s": 0.206
+}

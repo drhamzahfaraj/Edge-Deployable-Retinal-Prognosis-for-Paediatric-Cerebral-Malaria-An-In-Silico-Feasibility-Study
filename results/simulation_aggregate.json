@@ -1,0 +1,177 @@
+{
+  "study_type": "in_silico_feasibility_simulation",
+  "description": "Aggregated over 25 seeds. Every number below comes from distributional priors anchored to published cerebral-malaria retinopathy cohorts (Beare 2006, Beare 2009, Joshi 2017, Barrera 2018, MacCormick 2020). No patient was enrolled and no Raspberry Pi was physically measured for this study.",
+  "config_template": {
+    "n_patients": 132,
+    "mortality_rate": 0.136,
+    "mean_age_months": 42.0,
+    "sd_age_months": 23.0,
+    "pct_male": 0.58,
+    "pct_severe_gcs_lt_8": 0.4,
+    "n_sectors": 48,
+    "sras_mean_death": 0.3,
+    "sras_sd_death": 0.18,
+    "sras_mean_surv": 0.2,
+    "sras_sd_surv": 0.17,
+    "informative_macular_frac": 0.5,
+    "informative_periph_frac": 0.2,
+    "sample_noise_sd": 0.08,
+    "feature_dim": 128,
+    "gat_heads": 2,
+    "gat_hidden": 48,
+    "xgb_trees": 30,
+    "xgb_max_depth": 3,
+    "mcd_samples": 10,
+    "mcd_rate": 0.1,
+    "focal_gamma": 2.0,
+    "n_synthetic": 500,
+    "target_fid": 12.5,
+    "train_frac": 0.7,
+    "val_frac": 0.15,
+    "test_frac": 0.15,
+    "pi4_idle_w": 2.7,
+    "pi4_load_w": 6.4,
+    "quantised_flops": 1500000000.0,
+    "pi4_flops_per_s": 2000000000.0,
+    "model_size_kb": 600,
+    "setup_cost_usd": 5050.0,
+    "tests_per_year": 10000,
+    "years": 5,
+    "hospital_day_cost_usd": 120.0,
+    "days_saved_per_test": 3.0,
+    "triage_mortality_reduction": 0.1,
+    "seed": 42
+  },
+  "main_metrics": {
+    "auc": {
+      "mean": 0.853,
+      "sd": 0.115,
+      "ci_95": [
+        0.628,
+        0.972
+      ],
+      "n": 25
+    },
+    "sensitivity_at_0.6": {
+      "mean": 0.83,
+      "sd": 0.213,
+      "ci_95": [
+        0.5,
+        1.0
+      ],
+      "n": 25
+    },
+    "specificity_at_0.6": {
+      "mean": 0.662,
+      "sd": 0.15,
+      "ci_95": [
+        0.378,
+        0.833
+      ],
+      "n": 25
+    },
+    "f1_at_0.6": {
+      "mean": 0.507,
+      "sd": 0.139,
+      "ci_95": [
+        0.271,
+        0.727
+      ],
+      "n": 25
+    }
+  },
+  "ablation": {
+    "full_auc": {
+      "mean": 0.853,
+      "sd": 0.115,
+      "ci_95": [
+        0.619,
+        0.972
+      ],
+      "n": 25
+    },
+    "no_ssl_auc": {
+      "mean": 0.828,
+      "sd": 0.095,
+      "ci_95": [
+        0.647,
+        0.983
+      ],
+      "n": 25
+    },
+    "no_gat_auc": {
+      "mean": 0.807,
+      "sd": 0.126,
+      "ci_95": [
+        0.561,
+        0.958
+      ],
+      "n": 25
+    },
+    "no_xgb_auc": {
+      "mean": 0.853,
+      "sd": 0.115,
+      "ci_95": [
+        0.619,
+        0.972
+      ],
+      "n": 25
+    },
+    "no_synth_auc": {
+      "mean": 0.856,
+      "sd": 0.121,
+      "ci_95": [
+        0.577,
+        0.978
+      ],
+      "n": 25
+    },
+    "no_mcd_auc": {
+      "mean": 0.853,
+      "sd": 0.115,
+      "ci_95": [
+        0.619,
+        0.972
+      ],
+      "n": 25
+    },
+    "sras_macular_importance": {
+      "mean": 0.69,
+      "sd": 0.04,
+      "ci_95": [
+        0.626,
+        0.769
+      ],
+      "n": 25
+    },
+    "sras_peripheral_importance": {
+      "mean": 0.31,
+      "sd": 0.04,
+      "ci_95": [
+        0.231,
+        0.374
+      ],
+      "n": 25
+    }
+  },
+  "uncertainty": {
+    "mean_fn_per_test_set": 0.68,
+    "mean_mcd_flagged_fn": 0.0,
+    "mcd_flag_rate": 0.0
+  },
+  "compute_budget_modelled": {
+    "inference_s": 4.5,
+    "incremental_power_w": 0.93,
+    "energy_per_test_j": 0.69,
+    "model_size_kb": 600
+  },
+  "cost_model": {
+    "total_tests": 50000,
+    "total_cost_usd": 30050.0,
+    "test_cost_usd": 0.5,
+    "lives_saved": 226,
+    "cost_per_life_saved_usd": 132.96,
+    "hospital_day_savings_usd": 18000000
+  },
+  "runtime_s": 1.917
+}

@@ -200,9 +200,9 @@ scored an image. The simulation is defended on four pillars:
 ### 6.2 Hybrid pipeline
 
 ```
-          ┌──────────────────────────────────────────────────┐
-          │  Fundus image  64×64, normalised to [0,1]        │
-          └────────────────────┬─────────────────────────────┘
+        ┌─────────────────────────────────────────────┐
+        │Fundus image  64×64, normalised to [0,1]     │
+        └──────────────────────┬──────────────────────┘
                                │
         ┌──────────────────────▼──────────────────────┐
         │  Block 1 — SSL feature extractor            │

@@ -1,0 +1,482 @@
+% =====================================================================
+% references.bib  (VERIFIED)
+% H-SAS-GF: A Hybrid AI Framework for Scalable Cerebral Malaria
+% Retinal Prognosis Using Small Cohorts and Synthetic Data
+%
+% Every entry below has been verified for author, title, journal,
+% volume, year and DOI as of 2026-04-22 against PubMed, the publisher's
+% DOI resolution, or the official project page.  Entries previously
+% present in the draft whose citation details could not be verified
+% have been removed (see /docs/04_REFERENCE_AUDIT.md).
+% =====================================================================
+
+% ----- WHO sources (primary-source grey literature, URL-anchored) -----
+@misc{WHO2022,
+  author       = {{World Health Organization}},
+  title        = {World Malaria Report 2022},
+  year         = {2022},
+  howpublished = {\url{https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2022}},
+  note         = {Accessed 2026-04-22}
+}
+
+@misc{WHO2023,
+  author       = {{World Health Organization}},
+  title        = {Malaria (Fact Sheet)},
+  year         = {2023},
+  howpublished = {\url{https://www.who.int/news-room/fact-sheets/detail/malaria}},
+  note         = {Accessed 2026-04-22}
+}
+
+% ----- Foundational CM epidemiology -----
+@article{Idro2010,
+  author  = {Idro, Richard and Marsh, Kevin and John, Chandy C. and Newton, Charles R. J. C.},
+  title   = {Cerebral malaria: mechanisms of brain injury and strategies for improved neurocognitive outcome},
+  journal = {Pediatric Research},
+  volume  = {68},
+  number  = {4},
+  pages   = {267--274},
+  year    = {2010},
+  doi     = {10.1203/PDR.0b013e3181eee738}
+}
+
+% ----- Malarial retinopathy: clinical foundation -----
+@article{Beare2006,
+  author  = {Beare, Nicholas A. V. and Taylor, Terrie E. and Harding, Simon P. and Lewallen, Susan and Molyneux, Malcolm E.},
+  title   = {Malarial retinopathy: a newly established diagnostic sign in severe malaria},
+  journal = {The American Journal of Tropical Medicine and Hygiene},
+  volume  = {75},
+  number  = {5},
+  pages   = {790--797},
+  year    = {2006},
+  note    = {PMID 17123967}
+}
+
+@article{Beare2009,
+  author  = {Beare, Nicholas A. V. and Harding, Simon P. and Taylor, Terrie E. and Lewallen, Susan and Molyneux, Malcolm E.},
+  title   = {Perfusion abnormalities in children with cerebral malaria and malarial retinopathy},
+  journal = {The Journal of Infectious Diseases},
+  volume  = {199},
+  number  = {2},
+  pages   = {263--271},
+  year    = {2009},
+  doi     = {10.1086/595735}
+}
+
+@article{BeareArch2004,
+  author  = {Beare, Nicholas A. V. and Southern, Catherine and Chalira, Charles and Taylor, Terrie E. and Molyneux, Malcolm E. and Harding, Simon P.},
+  title   = {Prognostic significance and course of retinopathy in children with severe malaria},
+  journal = {Archives of Ophthalmology},
+  volume  = {122},
+  number  = {8},
+  pages   = {1141--1147},
+  year    = {2004},
+  doi     = {10.1001/archopht.122.8.1141}
+}
+
+@article{Barrera2018,
+  author  = {Barrera, Valentina and MacCormick, Ian J. C. and Czanner, Gabriela and Hiscott, Paul S. and White, Valerie A. and Craig, Alister G. and Beare, Nicholas A. V. and Culshaw, Lucy H. and Zheng, Yalin and Biddolph, Simon C. and Milner, Danny A. and Kamiza, Steve and Molyneux, Malcolm E. and Taylor, Terrie E. and Harding, Simon P.},
+  title   = {Neurovascular sequestration in paediatric \textit{P. falciparum} malaria is visible clinically in the retina},
+  journal = {eLife},
+  volume  = {7},
+  pages   = {e32208},
+  year    = {2018},
+  doi     = {10.7554/eLife.32208}
+}
+
+@article{MacCormick2020,
+  author  = {MacCormick, Ian J. C. and Barrera, Valentina and Beare, Nicholas A. V. and Czanner, Gabriela and Potchen, Michael and Kampondeni, Sam and Seydel, Karl and Harding, Simon P. and Molyneux, Malcolm E. and Taylor, Terrie E.},
+  title   = {How does blood-retinal barrier breakdown relate to death and disability in pediatric cerebral malaria?},
+  journal = {The Journal of Infectious Diseases},
+  volume  = {225},
+  number  = {6},
+  pages   = {1070--1080},
+  year    = {2020},
+  doi     = {10.1093/infdis/jiaa541}
+}
+
+@article{Wilson2023,
+  author  = {Wilson, Kyle J. and Dhalla, Amit and Meng, Yanda and Tu, Zhanhan and Zheng, Yalin and Mhango, Priscilla and Seydel, Karl B. and Beare, Nicholas A. V.},
+  title   = {Retinal imaging technologies in cerebral malaria: a systematic review},
+  journal = {Malaria Journal},
+  volume  = {22},
+  pages   = {139},
+  year    = {2023},
+  doi     = {10.1186/s12936-023-04566-7}
+}
+
+@article{BeareEye2023,
+  author  = {Beare, Nicholas A. V.},
+  title   = {Cerebral malaria---using the retina to study the brain},
+  journal = {Eye},
+  volume  = {37},
+  number  = {12},
+  pages   = {2379--2384},
+  year    = {2023},
+  doi     = {10.1038/s41433-023-02432-z}
+}
+
+@article{Taylor2004,
+  author  = {Taylor, Terrie E. and Fu, Wenjiang J. and Carr, Richard A. and others},
+  title   = {Differentiating the pathologies of cerebral malaria by postmortem parasite counts},
+  journal = {Nature Medicine},
+  volume  = {10},
+  number  = {2},
+  pages   = {143--145},
+  year    = {2004},
+  doi     = {10.1038/nm986}
+}
+
+% ----- Automated / AI-assisted MR detection -----
+@article{Joshi2017,
+  author  = {Joshi, Vinayak and Agurto, Carla and Barriga, Simon and Nemeth, Sheila and Soliz, Peter and MacCormick, Ian J. C. and Lewallen, Susan and Taylor, Terrie E. and Harding, Simon P.},
+  title   = {Automated detection of malarial retinopathy in digital fundus images for improved diagnosis in {M}alawian children with clinically defined cerebral malaria},
+  journal = {Scientific Reports},
+  volume  = {7},
+  pages   = {42703},
+  year    = {2017},
+  doi     = {10.1038/srep42703}
+}
+
+@article{Zhao2015,
+  author  = {Zhao, Yitian and MacCormick, Ian J. C. and Parry, David G. and Leach, Sophie and Beare, Nicholas A. V. and Harding, Simon P. and Zheng, Yalin},
+  title   = {Automated detection of leakage in fluorescein angiography images with application to malarial retinopathy},
+  journal = {Scientific Reports},
+  volume  = {5},
+  pages   = {10425},
+  year    = {2015},
+  doi     = {10.1038/srep10425}
+}
+
+@article{Kurup2023,
+  author  = {Kurup, Aswathy Rajendra and Wigdahl, Jeffery and Benson, Jonathan and Martinez-Ramon, Manel and Solis, Peter and Joshi, Vinayak},
+  title   = {Automated malarial retinopathy detection using transfer learning and multi-camera retinal images},
+  journal = {Biocybernetics and Biomedical Engineering},
+  volume  = {43},
+  number  = {1},
+  pages   = {109--123},
+  year    = {2023},
+  doi     = {10.1016/j.bbe.2022.12.003}
+}
+
+@article{Rajaraman2019,
+  author  = {Rajaraman, Sivaramakrishnan and Jaeger, Stefan and Antani, Sameer K.},
+  title   = {Performance evaluation of deep neural ensembles toward malaria parasite detection in thin-blood smear images},
+  journal = {PeerJ},
+  volume  = {7},
+  pages   = {e6977},
+  year    = {2019},
+  doi     = {10.7717/peerj.6977}
+}
+
+% ----- General deep-learning / medical-imaging context -----
+@inproceedings{Lin2017,
+  author    = {Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Doll\'ar, Piotr},
+  title     = {Focal loss for dense object detection},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  pages     = {2980--2988},
+  year      = {2017},
+  doi       = {10.1109/ICCV.2017.324}
+}
+
+@inproceedings{Chen2016,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  title     = {{XGBoost}: A scalable tree boosting system},
+  booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  pages     = {785--794},
+  year      = {2016},
+  doi       = {10.1145/2939672.2939785}
+}
+
+@inproceedings{Tan2019,
+  author    = {Tan, Mingxing and Le, Quoc V.},
+  title     = {{EfficientNet}: Rethinking model scaling for convolutional neural networks},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning (ICML)},
+  pages     = {6105--6114},
+  year      = {2019},
+  note      = {arXiv:1905.11946}
+}
+
+@inproceedings{Sandler2018,
+  author    = {Sandler, Mark and Howard, Andrew and Zhu, Menglong and Zhmoginov, Andrey and Chen, Liang-Chieh},
+  title     = {{MobileNetV2}: Inverted residuals and linear bottlenecks},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {4510--4520},
+  year      = {2018},
+  doi       = {10.1109/CVPR.2018.00474}
+}
+
+@inproceedings{Velickovic2018,
+  author    = {Veli\v{c}kovi\'c, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Li\'o, Pietro and Bengio, Yoshua},
+  title     = {Graph Attention Networks},
+  booktitle = {Proceedings of the 6th International Conference on Learning Representations (ICLR)},
+  year      = {2018},
+  note      = {arXiv:1710.10903}
+}
+
+@inproceedings{Chen2020SimCLR,
+  author    = {Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
+  title     = {A simple framework for contrastive learning of visual representations},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning (ICML)},
+  pages     = {1597--1607},
+  year      = {2020},
+  note      = {arXiv:2002.05709}
+}
+
+@inproceedings{Gal2016,
+  author    = {Gal, Yarin and Ghahramani, Zoubin},
+  title     = {Dropout as a {B}ayesian approximation: Representing model uncertainty in deep learning},
+  booktitle = {Proceedings of the 33rd International Conference on Machine Learning (ICML)},
+  pages     = {1050--1059},
+  year      = {2016},
+  note      = {arXiv:1506.02142}
+}
+
+@inproceedings{Guo2017Calibration,
+  author    = {Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.},
+  title     = {On calibration of modern neural networks},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning (ICML)},
+  pages     = {1321--1330},
+  year      = {2017},
+  note      = {arXiv:1706.04599}
+}
+
+@inproceedings{Lakshminarayanan2017DeepEnsembles,
+  author    = {Lakshminarayanan, Balaji and Pritzel, Alexander and Blundell, Charles},
+  title     = {Simple and scalable predictive uncertainty estimation using deep ensembles},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {30},
+  year      = {2017},
+  note      = {arXiv:1612.01474}
+}
+
+@article{Zhou2023RETFound,
+  author  = {Zhou, Yukun and Chia, Mark A. and Wagner, Siegfried K. and Ayhan, Murat S. and Williamson, Dominic J. and Struyven, Robbert R. and Liu, Timing and Xu, Moucheng and Lozano, Mateo G. and Woodward-Court, Peter and Kihara, Yuka and Altmann, Andre and Lee, Aaron Y. and Topol, Eric J. and Denniston, Alastair K. and Alexander, Daniel C. and Keane, Pearse A.},
+  title   = {A foundation model for generalizable disease detection from retinal images},
+  journal = {Nature},
+  volume  = {622},
+  pages   = {156--163},
+  year    = {2023},
+  doi     = {10.1038/s41586-023-06555-x}
+}
+
+@article{Heusel2017FID,
+  author  = {Heusel, Martin and Ramsauer, Hubert and Unterthiner, Thomas and Nessler, Bernhard and Hochreiter, Sepp},
+  title   = {{GANs} trained by a two time-scale update rule converge to a local {N}ash equilibrium},
+  journal = {Advances in Neural Information Processing Systems},
+  volume  = {30},
+  year    = {2017},
+  note    = {arXiv:1706.08500}
+}
+
+@article{ChenHealth2021Synthetic,
+  author  = {Chen, Richard J. and Lu, Ming Y. and Chen, Tiffany Y. and Williamson, Drew F. K. and Mahmood, Faisal},
+  title   = {Synthetic data in machine learning for medicine and healthcare},
+  journal = {Nature Biomedical Engineering},
+  volume  = {5},
+  pages   = {493--497},
+  year    = {2021},
+  doi     = {10.1038/s41551-021-00751-8}
+}
+
+@article{Abramoff2018IDx,
+  author  = {Abr\`amoff, Michael D. and Lavin, Philip T. and Birch, Michele and Shah, Nilay and Folk, James C.},
+  title   = {Pivotal trial of an autonomous {AI}-based diagnostic system for detection of diabetic retinopathy in primary care offices},
+  journal = {npj Digital Medicine},
+  volume  = {1},
+  pages   = {39},
+  year    = {2018},
+  doi     = {10.1038/s41746-018-0040-6}
+}
+
+% ----- Statistics / evaluation -----
+% ----- External datasets used for transfer / robustness -----
+@article{Staal2004DRIVE,
+  author  = {Staal, Joes and Abr\`amoff, Michael D. and Niemeijer, Meindert and Viergever, Max A. and van Ginneken, Bram},
+  title   = {Ridge-based vessel segmentation in color images of the retina},
+  journal = {IEEE Transactions on Medical Imaging},
+  volume  = {23},
+  number  = {4},
+  pages   = {501--509},
+  year    = {2004},
+  doi     = {10.1109/TMI.2004.825627}
+}
+
+@misc{DRIVE2004,
+  author       = {{DRIVE Project}},
+  title        = {Digital Retinal Images for Vessel Extraction},
+  year         = {2004},
+  howpublished = {\url{https://drive.grand-challenge.org}},
+  note         = {Accessed 2026-04-22}
+}
+
+@article{Decenciere2014Messidor,
+  author  = {Decenci\`ere, Etienne and Zhang, Xiwei and Cazuguel, Guy and others},
+  title   = {Feedback on a publicly distributed image database: The {M}essidor database},
+  journal = {Image Analysis \& Stereology},
+  volume  = {33},
+  number  = {3},
+  pages   = {231--234},
+  year    = {2014},
+  doi     = {10.5566/ias.1155}
+}
+
+% ----- Transformers for vision (for contrast/ablation baseline) -----
+@inproceedings{Dosovitskiy2021ViT,
+  author    = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+  title     = {An image is worth {16$\times$16} words: Transformers for image recognition at scale},
+  booktitle = {Proceedings of the 9th International Conference on Learning Representations (ICLR)},
+  year      = {2021},
+  note      = {arXiv:2010.11929}
+}
+
+% ----- Raspberry Pi hardware reference -----
+@misc{RaspberryPi2022,
+  author       = {{Raspberry Pi Ltd}},
+  title        = {Raspberry Pi 4 {M}odel {B} Product Brief},
+  year         = {2022},
+  howpublished = {\url{https://www.raspberrypi.com/products/raspberry-pi-4-model-b/}},
+  note         = {Accessed 2026-04-22}
+}
+
+@misc{RaspberryPiPower2021,
+  author       = {{Raspberry Pi Ltd}},
+  title        = {Raspberry Pi 4 Power and Thermal Specifications},
+  year         = {2021},
+  howpublished = {\url{https://www.raspberrypi.com/documentation/computers/raspberry-pi.html}},
+  note         = {Accessed 2026-04-22}
+}
+
+% ----- Lightweight inference runtime -----
+@misc{TFLite2022,
+  author       = {{TensorFlow team}},
+  title        = {{T}ensor{F}low {L}ite for {M}icrocontrollers and {E}mbedded {D}evices},
+  year         = {2022},
+  howpublished = {\url{https://www.tensorflow.org/lite}},
+  note         = {Accessed 2026-04-22}
+}
+
+% ----- SDG context / rural healthcare economics (only if needed) -----
+@article{Dondorp2010,
+  author  = {Dondorp, Arjen M. and Fanello, Caterina I. and Hendriksen, Ilse C.E. and Gomes, Ermelinda and Seni, Amir and Chhaganlal, Kajal D. and Bojang, Kalifa and Olaosebikan, Rasaq and Anunobi, Nkechinyere and Maitland, Kathryn and others},
+  title   = {Artesunate versus quinine in the treatment of severe falciparum malaria in {A}frican children ({AQUAMAT}): an open-label, randomised trial},
+  journal = {The Lancet},
+  volume  = {376},
+  number  = {9753},
+  pages   = {1647--1657},
+  year    = {2010},
+  doi     = {10.1016/S0140-6736(10)61924-1}
+}
+
+@article{Gulshan2016,
+  author  = {Gulshan, Varun and Peng, Lily and Coram, Marc and Stumpe, Martin C. and Wu, Derek and Narayanaswamy, Arunachalam and Venugopalan, Subhashini and Widner, Kasumi and Madams, Tom and Cuadros, Jorge and others},
+  title   = {Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs},
+  journal = {JAMA},
+  volume  = {316},
+  number  = {22},
+  pages   = {2402--2410},
+  year    = {2016},
+  doi     = {10.1001/jama.2016.17216}
+}
+
+@inproceedings{He2020MoCo,
+  author    = {He, Kaiming and Fan, Haoqi and Wu, Yuxin and Xie, Saining and Girshick, Ross},
+  title     = {Momentum Contrast for Unsupervised Visual Representation Learning},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {9729--9738},
+  year      = {2020},
+  doi       = {10.1109/CVPR42600.2020.00975}
+}
+
+@article{Krishnan2022SSL,
+  author  = {Krishnan, Rayan and Rajpurkar, Pranav and Topol, Eric J.},
+  title   = {Self-supervised learning in medicine and healthcare},
+  journal = {Nature Biomedical Engineering},
+  volume  = {6},
+  pages   = {1346--1352},
+  year    = {2022},
+  doi     = {10.1038/s41551-022-00914-1}
+}
+
+@inproceedings{Kipf2017GCN,
+  author    = {Kipf, Thomas N. and Welling, Max},
+  title     = {Semi-Supervised Classification with Graph Convolutional Networks},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2017},
+  note      = {arXiv:1609.02907}
+}
+
+@article{CabitzaRasoini2017,
+  author  = {Cabitza, Federico and Rasoini, Raffaele and Gensini, Gian Franco},
+  title   = {Unintended Consequences of Machine Learning in Medicine},
+  journal = {JAMA},
+  volume  = {318},
+  number  = {6},
+  pages   = {517--518},
+  year    = {2017},
+  doi     = {10.1001/jama.2017.7797}
+}
+
+@inproceedings{Howard2019MobileNetV3,
+  author    = {Howard, Andrew and Sandler, Mark and Chu, Grace and Chen, Liang-Chieh and Chen, Bo and Tan, Mingxing and Wang, Weijun and Zhu, Yukun and Pang, Ruoming and Vasudevan, Vijay and Le, Quoc V. and Adam, Hartwig},
+  title     = {Searching for {MobileNetV3}},
+  booktitle = {IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages     = {1314--1324},
+  year      = {2019},
+  doi       = {10.1109/ICCV.2019.00140}
+}
+
+@article{Sahlsten2019,
+  author  = {Sahlsten, Jaakko and Jaskari, Joel and Kivinen, Jyrki and Turunen, Lauri and Jaanio, Esa and Hietala, Kustaa and Kaski, Kimmo},
+  title   = {Deep Learning Fundus Image Analysis for Diabetic Retinopathy and Macular Edema Grading},
+  journal = {Scientific Reports},
+  volume  = {9},
+  pages   = {10750},
+  year    = {2019},
+  doi     = {10.1038/s41598-019-47181-w}
+}
+
+@article{Wang2019TTA,
+  author  = {Wang, Guotai and Li, Wenqi and Aertsen, Michael and Deprest, Jan and Ourselin, S\'ebastien and Vercauteren, Tom},
+  title   = {Aleatoric uncertainty estimation with test-time augmentation for medical image segmentation with convolutional neural networks},
+  journal = {Neurocomputing},
+  volume  = {338},
+  pages   = {34--45},
+  year    = {2019},
+  doi     = {10.1016/j.neucom.2019.01.103}
+}
+
+@inproceedings{Kingma2015Adam,
+  author    = {Kingma, Diederik P. and Ba, Jimmy},
+  title     = {{Adam}: A Method for Stochastic Optimization},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2015},
+  note      = {arXiv:1412.6980}
+}
+
+@inproceedings{Loshchilov2019AdamW,
+  author    = {Loshchilov, Ilya and Hutter, Frank},
+  title     = {Decoupled Weight Decay Regularization},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2019},
+  note      = {arXiv:1711.05101}
+}
+
+@article{Molyneux1989BCS,
+  author  = {Molyneux, M. E. and Taylor, T. E. and Wirima, J. J. and Borgstein, A.},
+  title   = {Clinical features and prognostic indicators in paediatric cerebral malaria: a study of 131 comatose {Malawian} children},
+  journal = {Quarterly Journal of Medicine},
+  volume  = {71},
+  number  = {265},
+  pages   = {441--459},
+  year    = {1989},
+  note    = {PMID 2690177}
+}
+
+@inproceedings{Fu2019EyeQ,
+  author    = {Fu, Huazhu and Wang, Boyang and Shen, Jianbing and Cui, Shanshan and Xu, Yanwu and Liu, Jiang and Shao, Ling},
+  title     = {Evaluation of Retinal Image Quality Assessment Networks in Different Color-Spaces},
+  booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2019},
+  pages     = {48--56},
+  year      = {2019},
+  doi       = {10.1007/978-3-030-32239-7\_6}
+}

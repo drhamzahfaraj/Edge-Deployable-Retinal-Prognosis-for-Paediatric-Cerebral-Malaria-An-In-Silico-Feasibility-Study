@@ -13,9 +13,8 @@ An In-Silico Feasibility Study**
 > cerebral-malaria retinal prognosis on a \$50 single-board computer.
 > All numbers in the paper are re-derivable with a single command.
 
-> ⚠️ **Important** — this is a **simulation-only** study. No patient
-> was enrolled, no Raspberry Pi was physically measured, no clinician
-> scored an image. The repository is a pre-registration of a pilot
+> **No**  patient was enrolled, no Raspberry Pi was physically measured, 
+>no clinician scored an image. The repository is a pre-registration of a pilot
 > whose results will be reported here regardless of outcome.
 
 ---
